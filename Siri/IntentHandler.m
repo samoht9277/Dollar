@@ -1,14 +1,30 @@
 //
-//  ViewController.h
-//  Dollar
+//  IntentHandler.m
+//  Siri
 //
 //  Created by Tomi on 28/11/2021.
 //
 
-#import <UIKit/UIKit.h>
+#import "IntentHandler.h"
 
 @interface Dollar : NSObject
 -(NSArray *) getDataFrom:(NSString *)link type:(NSString *)type;
+@end
+
+@interface IntentHandler ()
+
+@end
+
+@implementation IntentHandler
+
+- (id)handlerForIntent:(INIntent *)intent {
+    //id dollar = [[Dollar alloc] init];
+    //NSArray *blue = [dollar getDataFrom:@"https://dollar-api.herokuapp.com/" type:@"blue"];
+    //NSArray *official = [dollar getDataFrom:@"https://dollar-api.herokuapp.com/" type:@"official"];
+
+    return self;
+}
+
 @end
 
 @implementation Dollar
@@ -31,9 +47,3 @@
 }
 
 @end
-
-@interface ViewController : UIViewController
-
-
-@end
-

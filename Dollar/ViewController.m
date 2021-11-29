@@ -7,11 +7,6 @@
 
 #import "ViewController.h"
 
-
-@interface Dollar : NSObject
--(NSArray *) getDataFrom:(NSString *)link type:(NSString *)type;
-@end
-
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *blueVenta;
 @property (weak, nonatomic) IBOutlet UILabel *blueCompra;
@@ -48,23 +43,4 @@
 
 @end
 
-@implementation Dollar
 
--(NSArray *) getDataFrom:(NSString *)link type:(NSString *)type {
-    NSString *url = [link stringByAppendingString:type];
-    
-    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
-    NSError *error = nil;
-    id response = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers | NSJSONReadingMutableLeaves error:&error];
-    
-    if (error) {
-        NSLog(@"%@", [error localizedDescription]);
-    } else {
-        NSArray *result = @[[response objectForKey:@"compra"], [response objectForKey:@"venta"]];
-        return result;
-    }
-    
-    return 0;
-}
-
-@end
