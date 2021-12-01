@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E6B3FB0227547912009DAAB9 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B3FB0127547912009DAAB9 /* Intents.framework */; };
-		E6B3FB0627547912009DAAB9 /* IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B3FB0527547912009DAAB9 /* IntentHandler.m */; };
-		E6B3FB0A27547912009DAAB9 /* Siri.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E6B3FAFF27547912009DAAB9 /* Siri.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E6C4CB50275415E500EA8A35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4CB4F275415E500EA8A35 /* AppDelegate.m */; };
 		E6C4CB53275415E500EA8A35 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4CB52275415E500EA8A35 /* SceneDelegate.m */; };
 		E6C4CB56275415E500EA8A35 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4CB55275415E500EA8A35 /* ViewController.m */; };
@@ -18,16 +15,6 @@
 		E6C4CB5E275415F900EA8A35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C4CB5C275415F900EA8A35 /* LaunchScreen.storyboard */; };
 		E6C4CB61275415F900EA8A35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4CB60275415F900EA8A35 /* main.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E6B3FB0827547912009DAAB9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6C4CB43275415E400EA8A35 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E6B3FAFE27547912009DAAB9;
-			remoteInfo = Siri;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E6B3FAF527546F1E009DAAB9 /* Embed Frameworks */ = {
@@ -46,7 +33,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				E6B3FB0A27547912009DAAB9 /* Siri.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,11 +40,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E6B3FAFF27547912009DAAB9 /* Siri.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Siri.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6B3FB0127547912009DAAB9 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
-		E6B3FB0427547912009DAAB9 /* IntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentHandler.h; sourceTree = "<group>"; };
-		E6B3FB0527547912009DAAB9 /* IntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentHandler.m; sourceTree = "<group>"; };
-		E6B3FB0727547912009DAAB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6C4CB4B275415E500EA8A35 /* Dollar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dollar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C4CB4E275415E500EA8A35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E6C4CB4F275415E500EA8A35 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,14 +55,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E6B3FAFC27547912009DAAB9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E6B3FB0227547912009DAAB9 /* Intents.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E6C4CB48275415E500EA8A35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,30 +65,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E6B3FB0027547912009DAAB9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E6B3FB0127547912009DAAB9 /* Intents.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E6B3FB0327547912009DAAB9 /* Siri */ = {
-			isa = PBXGroup;
-			children = (
-				E6B3FB0427547912009DAAB9 /* IntentHandler.h */,
-				E6B3FB0527547912009DAAB9 /* IntentHandler.m */,
-				E6B3FB0727547912009DAAB9 /* Info.plist */,
-			);
-			path = Siri;
-			sourceTree = "<group>";
-		};
 		E6C4CB42275415E400EA8A35 = {
 			isa = PBXGroup;
 			children = (
 				E6C4CB4D275415E500EA8A35 /* Dollar */,
-				E6B3FB0327547912009DAAB9 /* Siri */,
-				E6B3FB0027547912009DAAB9 /* Frameworks */,
 				E6C4CB4C275415E500EA8A35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				E6C4CB4B275415E500EA8A35 /* Dollar.app */,
-				E6B3FAFF27547912009DAAB9 /* Siri.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,23 +102,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E6B3FAFE27547912009DAAB9 /* Siri */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E6B3FB0B27547912009DAAB9 /* Build configuration list for PBXNativeTarget "Siri" */;
-			buildPhases = (
-				E6B3FAFB27547912009DAAB9 /* Sources */,
-				E6B3FAFC27547912009DAAB9 /* Frameworks */,
-				E6B3FAFD27547912009DAAB9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Siri;
-			productName = Siri;
-			productReference = E6B3FAFF27547912009DAAB9 /* Siri.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		E6C4CB4A275415E500EA8A35 /* Dollar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6C4CB64275415F900EA8A35 /* Build configuration list for PBXNativeTarget "Dollar" */;
@@ -180,7 +115,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				E6B3FB0927547912009DAAB9 /* PBXTargetDependency */,
 			);
 			name = Dollar;
 			productName = Dollar;
@@ -196,9 +130,6 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					E6B3FAFE27547912009DAAB9 = {
-						CreatedOnToolsVersion = 13.1;
-					};
 					E6C4CB4A275415E500EA8A35 = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -218,19 +149,11 @@
 			projectRoot = "";
 			targets = (
 				E6C4CB4A275415E500EA8A35 /* Dollar */,
-				E6B3FAFE27547912009DAAB9 /* Siri */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E6B3FAFD27547912009DAAB9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E6C4CB49275415E500EA8A35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,14 +167,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E6B3FAFB27547912009DAAB9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E6B3FB0627547912009DAAB9 /* IntentHandler.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E6C4CB47275415E500EA8A35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -264,14 +179,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E6B3FB0927547912009DAAB9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E6B3FAFE27547912009DAAB9 /* Siri */;
-			targetProxy = E6B3FB0827547912009DAAB9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E6C4CB57275415E600EA8A35 /* Main.storyboard */ = {
@@ -293,56 +200,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E6B3FB0C27547912009DAAB9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HYM2LV4SPQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Siri/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Siri;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.samoht.Dollar.Siri;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		E6B3FB0D27547912009DAAB9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HYM2LV4SPQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Siri/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Siri;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.samoht.Dollar.Siri;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		E6C4CB62275415F900EA8A35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -468,9 +325,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -480,7 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.samoht.Dollar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -497,9 +354,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -509,22 +366,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.samoht.Dollar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E6B3FB0B27547912009DAAB9 /* Build configuration list for PBXNativeTarget "Siri" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E6B3FB0C27547912009DAAB9 /* Debug */,
-				E6B3FB0D27547912009DAAB9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		E6C4CB46275415E500EA8A35 /* Build configuration list for PBXProject "Dollar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
