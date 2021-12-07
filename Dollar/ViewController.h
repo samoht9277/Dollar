@@ -24,9 +24,7 @@
     NSError *error = nil;
     id response = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers | NSJSONReadingMutableLeaves error:&error];
     
-    if (error) {
-        NSLog(@"%@", [error localizedDescription]);
-    } else {
+    if (!error) {
         NSArray *result = @[[response objectForKey:@"compra"], [response objectForKey:@"venta"]];
         return result;
     }
@@ -34,10 +32,9 @@
     return 0;
 }
 
-//    [dollar updateLabel:_officialVenta str2:_officialCompra str3:_blueCompra str4:_blueVenta];
 - (void) updateLabel:(UILabel *)str1 str2:(UILabel *)str2 str3:(UILabel *) str3 str4:(UILabel *)str4 {
-    NSArray *blue = [self getDataFrom:@"https://dollar-api.herokuapp.com/" type:@"blue"];
-    NSArray *official = [self getDataFrom:@"https://dollar-api.herokuapp.com/" type:@"official"];
+    NSArray *blue = [self getDataFrom:@"https://dollar-api-v5jsv.ondigitalocean.app/" type:@"blue"];
+    NSArray *official = [self getDataFrom:@"https://dollar-api-v5jsv.ondigitalocean.app/" type:@"official"];
     
     str1.text = [NSString stringWithFormat:@"$%@", official[0]];
     str2.text = [NSString stringWithFormat:@"$%@", official[1]];
